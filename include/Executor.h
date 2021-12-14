@@ -8,17 +8,17 @@
 using namespace std;
 
 class Executor {
-  private:
-  Sistema * sistema;
-  stringstream ss;
-  bool sair = false;
+    private:
+        Sistema * sistema;
+        stringstream ss;
+        bool sair = false;
 
-  public:
-  Executor(Sistema &sistema);
+    public:
+        Executor(Sistema &sistema);
 
-  void iniciar(istream &in, ostream &out);
+        void iniciar(istream &in, ostream &out);
 
-  string processarLinha(string linha);
+        string processarLinha(string linha);
 };
 
 #endif

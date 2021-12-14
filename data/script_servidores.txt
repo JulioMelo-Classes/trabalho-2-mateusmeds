@@ -1,0 +1,58 @@
+create-user mateus@mail.com senha123 Mateus Medeiros
+create-user damaris@mail.com senha123 Dâmaris Medeiros
+login mateus@mail.com senha123
+login damaris@mail.com senha123
+create-server 1 servidor-1
+create-server 1 servidor-2
+enter-server 1 servidor-1
+create-channel 1 canal-1-s1
+create-channel 1 canal-2-s1
+create-channel 1 canal-3-s1
+list-channels 1
+enter-server 2 servidor-1
+create-channel 2 canal-5-s1
+list-channels 1
+create-channel 2 canal-8-s1
+list-channels 2
+enter-server 3 servidor-1
+create-channel 3 canal-8-s1
+enter-channel 2 canal-8-s1
+enter-channel 2 canal-5-s1
+enter-server 3 servidor-1
+list-participants 2
+enter-server 2 servidor-1
+enter-channel 2 canal-5-s1
+send-message 2 Oi pessoal querem TC?
+send-message 1 Teste mensagem
+enter-channel 1 canal-5-s1
+send-message 1 Teste da mensagem 5
+list-messages 2
+disconnect 3
+send-message 3 Teste da mensagem 5
+login gabriel@mail.com senha12
+send-message 3 Teste da mensagem 5
+enter-server 3 servidor-1
+send-message 3 Teste da mensagem 5
+enter-channel 3 canal-5-s1
+send-message 3 Teste da mensagem 5
+send-message 3 Teste da mensagem 5
+send-message 3 Teste da mensagem 5
+send-message 3 Teste da mensagem 5
+list-messages 2
+list-servers 3
+enter-server 3 servidor-2
+send-message 3 Teste da mensag556564
+send-message 3 Teste da mensag556564
+send-message 3 Teste da mensag556564
+send-message 3 Teste da mensag556564
+create-channel 3 canalXYZ
+create-channel 3 testes
+create-channel 3 duvidas
+list-channels 3
+enter-channel 3 testes
+send-message 3 Teste da mensag556564
+send-message 3 Teste da mensag556564
+send-message 3 Teste da mensag556564
+send-message 3 Teste da mensag556564
+list-messages 3
+quit

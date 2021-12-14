@@ -1,0 +1,24 @@
+create-user isaacfranco@imd.ufrn.br senhalegal Isaac Franco Fernandes
+create-user isaacfranco@imd.ufrn.br senhalegal Isaac Franco Fernandes
+create-user renan@imd.ufrn.br senha Renan
+create-user julio@imd.ufrn.br senha Julio
+delete-user renan@imd.ufrn.br senha
+create-user mateus@mail.com senha123 Mateus Medeiros
+login mateus@mail.com senha123
+delete-user mateus@mail.com senha123
+create-user damaris@mail.com senha123 Dâmaris Medeiros
+create-user gabriel@mail.com senha12 Gabriel
+login isaacfranco@imd.ufrn.br senhalegal
+delete-user isaacfranco@imd.ufrn.br senhalegal
+delete-user naoexiste@mail.com senha Julio
+delete-user naoexiste@mail.com senha Julio
+delete-user julio@imd.ufrn.br senha Julio
+create-user clara@imd.ufrn.br senha Clara Medeiros
+login clara@imd.ufrn.br senha
+create-user loyse@imd.ufrn.br senha Loyse Medeiros
+delete-user naoexiste@mail.com senha Julio
+create-user joyci@imd.ufrn.br senha Joyci Medeiros
+create-user joyanne@imd.ufrn.br senha Joyanne Medeiros
+delete-user naoexiste@mail.com senha Julio
+login julio.melo@imd.ufrn.br 12ab34cd
+quit

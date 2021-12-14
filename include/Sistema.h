@@ -5,11 +5,47 @@
 #include <iostream>
 #include <map>
 
+#include "Usuario.h"
+#include "Servidor.h"
 
 // Sistema deve concentrar todas as operações do Concordo
 class Sistema {
+
+	private:
+
+		vector<Usuario*> usuarios;
+		vector<Servidor> servidores;
+		map<int, pair<unsigned int, unsigned int>> usuariosLogados;
+
+
   	public:
 
+		string buscarNomeCanalPeloId (int id, Servidor servidor);
+
+		bool pesquisarSeCanalJaExiste (string nome, Servidor servidor);
+
+	    Servidor buscarServidorPeloId (int id);
+
+		bool verificarSeJaEhParticipante (Usuario *usuario, Servidor servidor);
+
+	  	void imprimirUsuariosLogados ();
+		/*! Verifica se o email informado já existe no sistema
+			@param email o email do usuário informado no comando create-user
+			@return um bool true caso exista o email, ou false caso não exista
+		*/
+		bool checarSeExisteEmail (string email);
+
+		bool verificarSeEstaLogado (int id);
+
+		void addUsuario (Usuario *usuario);
+		void removerUsuario (Usuario *usuario);
+		vector<Usuario*> getUsuarios ();
+
+		Usuario * buscarUsuarioPeloId (int id);
+
+		void addServidor (Servidor servidor);
+		void removerServidor (Servidor servidor);
+		vector<Servidor> getServidores ();
 		/*! Encerra o funcionamento do Concordo, o programa termina ao executar este comando.
 			@return uma string com a mensagem "Saindo.."
 		*/
