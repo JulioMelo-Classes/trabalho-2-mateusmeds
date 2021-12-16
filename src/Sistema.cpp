@@ -489,6 +489,7 @@ string Sistema::remove_channel(int id, const string nome) {
 	return "Erro: O usuário precisa estar conectado em algum servidor para remover um canal!";
 }
 
+//checkin 4.1 e 4.2 ok!
 string Sistema::enter_channel(int id, const string nome) {
 
 	if (!this->verificarSeEstaLogado(id)) {
@@ -546,6 +547,7 @@ string Sistema::leave_channel(int id) {
 	return "Erro: O usuário precisa estar conectado em algum servidor para sair de um canal de texto!";
 }
 
+//checkin 4.1 e 4.2 ok!
 string Sistema::send_message(int id, const string mensagem) {
 
 	if (!this->verificarSeEstaLogado(id)) {
@@ -562,12 +564,12 @@ string Sistema::send_message(int id, const string mensagem) {
 				}
 
 				//Pesquisando se o canal de texto existe no servidor
-				for (auto &canal : srv.getCanaisTexto()) {
+				for (auto &canal : srv.getCanaisTexto()) { //
 
 					//Procurando canal pelo id
 					if (canal.getId() == i->second.second) {
 
-						Mensagem msg = Mensagem("13/12/2021 - 20:30", this->buscarUsuarioPeloId(id), mensagem);
+						Mensagem msg = Mensagem("13/12/2021 - 20:30", this->buscarUsuarioPeloId(id), mensagem); //o ideal era vc colocar essa criação da mensagem dentro do addMensagem.
 
 						canal.addMensagem(msg);
 
