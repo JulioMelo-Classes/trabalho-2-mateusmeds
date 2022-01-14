@@ -7,41 +7,41 @@
 
 #include "Usuario.h"
 
-using namespace std;
+using namespace std; //não pode usar aqui
 
 class Mensagem {
     private:
 
-    static int contadorId;
+        static int contadorId;
 
-    unsigned int id;
+        unsigned int id;
 
-    string dataHora;
-    string conteudo;
-    
-    Usuario *enviadaPor;
-    
+        string dataHora;
+        string conteudo;
+        
+        Usuario *enviadaPor;
+        
 
     public:
 
-    Mensagem (string dataHora, Usuario *enviadaPor, string conteudo);
+        Mensagem (string dataHora, Usuario *enviadaPor, string conteudo);
 
-    Mensagem ();
+        Mensagem ();
 
-    void setId (unsigned int id);
-    unsigned int getId ();
+        void setId (unsigned int id);
+        unsigned int getId ();
 
-    void setEnviadaPor(Usuario *enviadaPor);
-    Usuario * getEnviadaPor();
+        void setEnviadaPor(Usuario *enviadaPor);
+        Usuario * getEnviadaPor();
 
-    void setEmail (string email);
-    string getEmail ();
+        void setEmail (string email);
+        string getEmail ();
 
-    void setConteudo (string conteudo);
-    string getConteudo ();
+        void setConteudo (string conteudo);
+        string getConteudo ();
 
-    void setDataHora (string dataHora);
-    string getDataHora ();
+        void setDataHora (string dataHora);
+        string getDataHora ();
 
 
 };
